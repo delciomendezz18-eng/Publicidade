@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicidade - HP e iPhone</title>
+    <meta name="description" content="Página de publicidade com produtos HP e iPhone">
+    <link rel="stylesheet" href="../CSS/Style.css">
+
+    <body>
+    <div class="container">
+        <header class="header">
+            <h1>Tecnologia de Ponta</h1>
+            <p>Descubra os melhores produtos HP e iPhone</p>
+        </header>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="../IMAGEM/HP Elite.jpeg" alt="HP Laptop Elite" class="product-image">
+                <h2 class="product-title">HP Spectre x360</h2>
+                <p class="product-description">Convertível premium com processador Intel Core i7, 16GB RAM e SSD 512GB</p>
+                <div class="product-price">1.299.000,00</div>
+                <button class="btn btn-hp" onclick="handleHPButton()">Comprar Agora</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="../IMAGEM/15 pro.jpeg" alt="iPhone 15 Pro" class="product-image">
+                <h2 class="product-title">iPhone 15 Pro</h2>
+                <p class="product-description">Titânio, Câmara Pro, A17 Pro, Action Button e USB-C</p>
+                <div class="product-price">996.000,00</div>
+                <button class="btn btn-iphone" onclick="handleiPhoneButton()">Comprar Agora</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="../IMAGEM/HP own.jpeg" alt="HP Omen Gaming" class="product-image">
+                <h2 class="product-title">HP Omen 16</h2>
+                <p class="product-description">Portátil gaming com RTX 4070, Intel Core i9 e 32GB RAM</p>
+                <div class="product-price">2.499.000,00</div>
+                <button class="btn btn-hp" onclick="handleHPButton()">Comprar Agora</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="../IMAGEM/15.jpeg" alt="iPhone 15" class="product-image">
+                <h2 class="product-title">iPhone 15</h2>
+                <p class="product-description">Design inovador, câmara dupla 48MP e chip A16 Bionic</p>
+                <div class="product-price">949.000,00</div>
+                <button class="btn btn-iphone" onclick="handleiPhoneButton()">Comprar Agora</button>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <h2>Porque Escolher os Nossos Produtos</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="hp-clicks">0</div>
+                    <div class="stat-label">HP Clicks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="iphone-clicks">0</div>
+                    <div class="stat-label">iPhone Clicks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="total-clicks">0</div>
+                    <div class="stat-label">Total Clicks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Suporte</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="notification" id="notification">
+        Produto adicionado ao carrinho!
+    </div>
+    <script src="../JAVASCRIPT/style.js"></script>
+    </body>
+</head>
+</html>
